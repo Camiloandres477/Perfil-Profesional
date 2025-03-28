@@ -1,8 +1,8 @@
-/* Fuente y colores */
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #58a6ff 40%, #c778dd 100%);
+    color:rgb(0, 0, 0);
     margin: 0;
     padding: 0;
 }
@@ -13,61 +13,63 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #1e1e1e;
+    background-color: #161b22;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-header h1 {
-    font-size: 24px;
-    color: #ffcc00;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Sección Hero */
+/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px;
+    padding: 60px;
     text-align: left;
 }
 
-.info {
-    max-width: 50%;
-}
-
 .info h2 {
-    font-size: 36px;
+    font-size: 40px;
+    background: rgb(0, 0, 0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+/* Redes sociales */
 .social-icons img {
-    width: 30px;
-    margin-right: 10px;
+    width: 40px;
+    filter: drop-shadow(2px 2px 6px rgba(88, 166, 255, 0.5));
+    margin-right: 15px;
 }
 
-.hero-image img {
-    width: 400px;
+/* Botones estilo Neon */
+button {
+    background-color: #ffcc00;
+    color: #121212;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
+button:hover {
+    background-color: #c778dd;
+    box-shadow: 0px 0px 10px rgba(199, 120, 221, 0.8);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-    .info {
-        max-width: 100%;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-    .hero-image img {
-        width: 100%;
-    }
+}
+
+.hero {
+    animation: fadeIn 1s ease-out;
 }
