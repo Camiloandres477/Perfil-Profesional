@@ -106,16 +106,24 @@ nav a {
 img {
     max-width: 100%;
     height: auto;
+    display: block; /* Evita espacios extra debajo de la imagen */
 }
+
 .container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
 
+/* RESPONSIVE */ 
 @media (min-width: 768px) {
     .hero {
         flex-direction: row;
         text-align: left;
+    }
+}
+@media (max-width: 768px) {
+    .image-container img {
+        width: 80%;
     }
 }
