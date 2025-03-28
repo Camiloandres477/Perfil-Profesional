@@ -1,10 +1,21 @@
 /* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #58a6ff 40%, #c778dd 100%);
+    background: linear-gradient(135deg, #aa22cf 40%, #000000 60%);
     color:rgb(0, 0, 0);
     margin: 0;
     padding: 0;
+}
+h1{
+    text-decoration: none;
+    color: white; /* Cambia el color del texto */
+    font-weight: bold;
+}
+
+p{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /* Encabezado */
@@ -13,8 +24,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #161b22;
+    background: linear-gradient(135deg, #aa22cf 60%, #000000 90%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#experiencia{
+    text-decoration: none;
+    color: white; /* Cambia el color del texto */
+    font-weight: bold;
+    padding-left: 60px;
 }
 
 /* Hero Section */
@@ -28,30 +46,19 @@ header {
 
 .info h2 {
     font-size: 40px;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 254, 254);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 /* Redes sociales */
 .social-icons img {
-    width: 40px;
-    filter: drop-shadow(2px 2px 6px rgba(88, 166, 255, 0.5));
-    margin-right: 15px;
+    width: 50px;
+    filter: drop-shadow(2px 2px 6px rgba(7, 7, 7, 0.5));
+    margin-right: 20px;
 }
 
-/* Botones estilo Neon */
-button {
-    background-color: #ffcc00;
-    color: #121212;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
+
 
 button:hover {
     background-color: #c778dd;
@@ -73,3 +80,25 @@ button:hover {
 .hero {
     animation: fadeIn 1s ease-out;
 }
+
+#experiencia{
+    animation: fadeIn 1s ease-out;
+}
+
+nav ul {
+    list-style: none; /* Quitar los puntos */
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espacio entre elementos */
+}
+
+nav ul li {
+    display: inline; /* Hace que los elementos se alineen en línea */
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* Cambia el color del texto */
+    font-weight: bold;
+}
+
