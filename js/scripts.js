@@ -29,3 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     observer.observe(habilidadesSection);
 });
+
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Tu mensaje ha sido enviado con éxito. ¡Gracias por contactarme! 🚀");
+});
+

@@ -6,6 +6,7 @@
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/scripts.js"></script>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -29,6 +30,9 @@
                 </a>
                 <a href="https://www.linkedin.com/in/camilo-andr%C3%A9s-l%C3%B3pez-castro/" target="_blank">
                     <img src="img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="docs/Camilo_CV.pdf" download="Camilo_CV.pdf" class="cv-button">
+                    <img src="img/carpeta.png" alt="CV" class="cv-icon"> 
                 </a>
             </div>
         </div>
@@ -64,12 +68,96 @@
             <span class="habilidad">Python</span>
             <span class="habilidad">SQL</span>
             <span class="habilidad">Ciberseguridad</span>
-            <span class="habilidad">Java</span>
+            <span class="habilidad">Administracion de redes</span>
+            <span class="habilidad">Infraestructura IT</span>
+            <span class="habilidad">Gestión de proyectos </span>
         </div>
+    </section>    
+
+    <section id="estudios">
+        <h2 class="titulo-seccion">📚 Formación Académica</h2>
+        <div class="timeline">
+            <div class="evento">
+                <div class="evento-icono">🎓</div>
+                <div class="evento-contenido">
+                    <h3>Tecnología en Desarrollo de Software</h3>
+                    <p>Universidad San Buenaventura - 2024</p>
+                </div>
+            </div>
+            <div class="evento">
+                <div class="evento-icono">💻</div>
+                <div class="evento-contenido">
+                    <h3>Diplomado en Java y Ciberseguridad</h3>
+                    <p>Platzi & Udemy - 2023</p>
+                </div>
+            </div>
+            <div class="evento">
+                <div class="evento-icono">🔒</div>
+                <div class="evento-contenido">
+                    <h3>Certificación SCRUM Master</h3>
+                    <p>Certiprof - 2022</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const eventos = document.querySelectorAll(".evento");
+        
+                function mostrarEventos() {
+                    eventos.forEach(evento => {
+                        const pos = evento.getBoundingClientRect().top;
+                        if (pos < window.innerHeight - 50) {
+                            evento.classList.add("visible");
+                        }
+                    });
+                }
+        
+                window.addEventListener("scroll", mostrarEventos);
+                mostrarEventos();
+            });
+        </script>
+        
     </section>
-   
+  
+    <section id="contacto">
+        <div id="particles-js"></div> <!-- Contenedor de partículas -->
+        <div class="contacto-info">
+            <h2>Contacto</h2>
+            <p>📧 Email: tuemail@example.com</p>
+            <p>📞 Teléfono: +57 123 456 7890</p>
+            <p>📍 Ubicación: Ciudad, País</p>
+        </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 100
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle"
+                    },
+                    "opacity": {
+                        "value": 0.5
+                    },
+                    "size": {
+                        "value": 3
+                    },
+                    "move": {
+                        "speed": 2
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "color": "#ffffff",
+                        "opacity": 0.4
+                    }
+                }
+            });
+    </script>
+</section>
     
 </body>
-
-
 </html>
