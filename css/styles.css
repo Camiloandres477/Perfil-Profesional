@@ -12,6 +12,10 @@ h1{
     font-weight: bold;
 }
 
+br{
+    margin-bottom: 10px;
+}
+
 p{
     color: white;
     font-weight: bold;
@@ -28,12 +32,76 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Experiencia */
 #experiencia{
     text-decoration: none;
     color: white; /* Cambia el color del texto */
     font-weight: bold;
     padding-left: 60px;
 }
+
+.empresa {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.empresa::before {
+    content: "📂 "; /* Icono de carpeta antes del texto */
+    color: #ffcc00;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.fecha {
+    margin-left: 28px; /* Mismo margen que el icono para alineación */
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Habilidades */
+ 
+#habilidades {
+    text-decoration: none;
+    color: white; /* Cambia el color del texto */
+    font-weight: bold;
+    padding-left: 60px;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    
+}#habilidades {
+    text-align: left;
+    margin-top: 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+#habilidades.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nube {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 10px;
+}
+
+.habilidad {
+    background-color: #ffafbd;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    animation: flotar 3s infinite alternate ease-in-out;
+}
+
+@keyframes flotar {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-10px); }
+}
+
 
 /* Hero Section */
 .hero {
@@ -82,8 +150,23 @@ button:hover {
     animation: fadeIn 1s ease-out;
 }
 
-#experiencia{
+#experiencia {
     animation: fadeIn 1s ease-out;
+}
+
+#habilidades {
+    animation: fadeIn 1s ease-out;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 nav ul {
@@ -106,7 +189,6 @@ nav a {
 img {
     max-width: 100%;
     height: auto;
-    display: block; /* Evita espacios extra debajo de la imagen */
 }
 
 .container {
