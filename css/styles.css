@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #aa22cf 40%, #000000 60%);
+    background: linear-gradient(135deg, #aa22cf 40%, #0fa5fc 60%);
     color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
@@ -35,7 +35,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: linear-gradient(135deg, #aa22cf 60%, #000000 90%);
+    background: linear-gradient(135deg, #aa22cf 60%, #0fa5fc 90%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -198,7 +198,7 @@ header {
 #contacto {
     position: relative;
     width: 100%;
-    background: linear-gradient(135deg, #aa22cf 15%, #000000 35%);
+    background: linear-gradient(135deg, #aa22cf 15%, #0fa5fc 35%);
     overflow: hidden;
     display: flex;
     justify-content: left;
