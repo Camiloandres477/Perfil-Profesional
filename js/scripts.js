@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Detectar los elementos con la clase ".experiencia-item"
     const elementos = document.querySelectorAll(".experiencia-item");
 
     const observer = new IntersectionObserver(entries => {
@@ -12,12 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { threshold: 0.3 });
 
     elementos.forEach(el => observer.observe(el));
-});
 
-document.addEventListener("DOMContentLoaded", () => {
+    // Detectar la sección de habilidades
     const habilidadesSection = document.getElementById("habilidades");
 
-    const observer = new IntersectionObserver(entries => {
+    const habilidadesObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 habilidadesSection.classList.add("visible");
@@ -27,12 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }, { threshold: 0.3 });
 
-    observer.observe(habilidadesSection);
+    habilidadesObserver.observe(habilidadesSection);
+
+    // Manejo del envío del formulario de contacto
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Tu mensaje ha sido enviado con éxito. ¡Gracias por contactarme! 🚀");
+    });
 });
-
-
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Tu mensaje ha sido enviado con éxito. ¡Gracias por contactarme! 🚀");
-});
-
