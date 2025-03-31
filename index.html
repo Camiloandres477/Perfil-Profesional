@@ -23,8 +23,9 @@
     <section class="hero">
         <div class="info">
             <h2>Hola, soy Camilo </h2>
-            <p>Desarrollador Full Stack 💻 con experiencia en tecnologías como Java, React, Spring Boot y más.</p>
-            <div class="social-icons">
+            <p>Tecnólogo bilingüe en desarrollo de software 💻 con una sólida formación en programación y ciberseguridad. Tengo conocimientos en Java, desarrollo web con HTML, CSS, JavaScript y Bootstrap, así como en la implementación de CRUD, seguridad web y pruebas unitarias. Además, cuento con certificaciones en SCRUM Master y SCRUM Developer.</p>
+            <p>Aunque aún no tengo experiencia profesional, he trabajado en proyectos académicos y personales que me han permitido desarrollar habilidades en desarrollo de software, análisis de procesos y gestión de proyectos. Me destaco por mi capacidad de aprendizaje continuo, adaptabilidad, trabajo en equipo y enfoque en la resolución de problemas.</p>           
+             <div class="social-icons">
                 <a href="https://github.com/Camiloandres477" target="_blank">
                     <img src="img/github.png" alt="GitHub">
                 </a>
@@ -80,21 +81,35 @@
             <div class="evento">
                 <div class="evento-icono">🎓</div>
                 <div class="evento-contenido">
+                    <h3>Ingenieria en Desarrollo de Software</h3>
+                    <p>Universidad Politécnico Gran Colombiano - Actualmente</p>
+                </div>
+            </div>
+            <div class="evento">
+                <div class="evento-icono">🎓</div>
+                <div class="evento-contenido">
                     <h3>Tecnología en Desarrollo de Software</h3>
                     <p>Universidad San Buenaventura - 2024</p>
                 </div>
             </div>
             <div class="evento">
-                <div class="evento-icono">💻</div>
+                <div class="evento-icono">🔒</div>
                 <div class="evento-contenido">
-                    <h3>Diplomado en Java y Ciberseguridad</h3>
-                    <p>Platzi & Udemy - 2023</p>
+                    <h3>Junior Cyber Security Analyst Career Path</h3>
+                    <p>CISCO Networking Academy - 2023</p>
                 </div>
             </div>
             <div class="evento">
                 <div class="evento-icono">🔒</div>
                 <div class="evento-contenido">
-                    <h3>Certificación SCRUM Master</h3>
+                    <h3>Certificación SCRUM MASTER</h3>
+                    <p>Certiprof - 2022</p>
+                </div>
+            </div>
+            <div class="evento">
+                <div class="evento-icono">🔒</div>
+                <div class="evento-contenido">
+                    <h3>Certificación SCRUM DEVELOPER</h3>
                     <p>Certiprof - 2022</p>
                 </div>
             </div>
@@ -123,9 +138,9 @@
         <div id="particles-js"></div> <!-- Contenedor de partículas -->
         <div class="contacto-info">
             <h2>Contacto</h2>
-            <p>📧 Email: tuemail@example.com</p>
-            <p>📞 Teléfono: +57 123 456 7890</p>
-            <p>📍 Ubicación: Ciudad, País</p>
+            <p>📧 Email: camiloandreslopezcastro@gmail.com</p>
+            <p>📞 Teléfono: +57 320 9314705</p>
+            <p>📍 Ubicación: Bogotá D.C, Colombia</p>
         </div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script>
@@ -158,6 +173,24 @@
             });
     </script>
 </section>
-    
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".hidden");
+
+        function handleScroll() {
+            elements.forEach((el) => {
+                const position = el.getBoundingClientRect().top;
+                if (position < window.innerHeight - 50) {
+                    el.classList.add("show");
+                } else {
+                    el.classList.remove("show");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", handleScroll);
+        handleScroll(); // Ejecutar al cargar la página
+    });
+</script>
 </body>
 </html>
