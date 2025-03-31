@@ -27,7 +27,7 @@ Este es un sitio web personal donde presento mi perfil profesional, incluyendo:
 ```
 
 ## 🌍 Demo
-Puedes ver el portafolio en línea aquí: [Mi Portafolio](https://perfilprofesional.netlify.app/) *(agregar enlace si está desplegado)*
+Puedes ver el portafolio en línea aquí: [Mi Portafolio](https://perfilprofesional.netlify.app/) 
 
 ## 📬 Contacto
 Si deseas contactarme, puedes escribirme a:
