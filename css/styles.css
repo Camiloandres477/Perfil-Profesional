@@ -5,6 +5,12 @@ body {
     color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
+    width: 100vw; /* Asegura que ocupe todo el ancho */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+* {
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 h1 {
@@ -248,8 +254,8 @@ p {
 }
 
 .social-icons a img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin: 0 10px;
     transition: transform 0.3s;
 }
